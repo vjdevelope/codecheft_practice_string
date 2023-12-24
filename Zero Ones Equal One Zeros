@@ -1,0 +1,32 @@
+/*Kulyash believes in equality.Given an integer N, output a binary string of length N such that:
+The count of 
+01
+01 subsequences in the string is equal to the count of 
+10 subsequences;The string has at least one occurrence of 
+0
+0 as well as 1
+If multiple such strings exist, print any. Also, it is guaranteed that corresponding to the given input, an answer always exists.
+*/
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n;
+	    cin>>n;
+	    for(int i=1;i<=n;i++)
+	    {
+	      if(i==1 || i==n)
+	      {
+	          cout<<"1";
+	      }
+	      else
+	      cout<<"0";
+	    }
+	    cout<<endl;
+	}
+
+}
